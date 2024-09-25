@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Page</title>
+  <!-- Daisy UI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font -->
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+
+<body style="font-family: 'Lexend', sans-serif;">
+  <header>
+    <section class="pb-3 pt-2 bg-[#f7f4ee]">
+      <div class="navbar bg-base-100 bg-[#f7f4ee] w-11/12 mx-auto">
+        <div class="navbar-start">
+          <a id="blog-btn" class="btn btn-ghost text-xl bg-[#B4F461] px-8 hover:bg-[#B4F461]">Home</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <div class="lg:flex lg:justify-end lg:items-center gap-2">
+            <img src="./assets/logo.png" alt="">
+            <h1 class="text-xl font-semibold">
+              Donate Bangladesh
+            </h1>
+          </div>
+        </div>
+        <div class="navbar-end gap-2">
+          <img src="./assets/coin.png" alt="">
+          <h1 class="text-lg font-semibold">10000<span> BDT</span></h1>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="w-11/12 mx-auto pt-0">
+      <div class="w-3/4 py-3 flex">
+        <h1 class="text-2xl lg:text-4xl font-extrabold mt-3">Important FAQ</h1><img class="w-10 lg:w-12 ml-3"
+          src="./assets/messages-question_9821616.png" alt="">
+      </div>
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-3xl font-medium">What is the Document Object Model(DOM)?</div>
+          <div class="collapse-content text-lg">
+            <p class="font-normal">HTML DOM (Document Object Model) is a hierarchical representation of HTML documents. It defines the structure and properties of elements on a webpage, enabling JavaScript to dynamically access, manipulate, and update content, enhancing interactivity and functionality.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border pl-0">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-3xl font-medium">How do you select an element from the DOM?</div>
+          <div class="collapse-content text-lg p-2">
+            <p class="text-base font-normal">There are various way to find elements in DOM.
+
+              The easiest way to find an HTML element in the DOM, is by using the element id. Example: const element =
+              document.getElementById('blog-btn');
+              Another way of finding element is by tag name. Example: const element =
+              document.getElementsByTagName("p"); It finds all the elements with paragraph tag.Find elements by
+              className. Example: const x = document.getElementsByClassName("intro");Find elements by Css Selectors. If
+              you want to find all HTML elements that match a specified CSS selector (id, class names, types,
+              attributes, values of attributes, etc), use the querySelectorAll() method. Example: const x =
+              document.querySelectorAll("p.introName");
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-3xl font-medium">What is event Delegation in the context of DOM, Why is it
+            useful?</div>
+          <div class="collapse-content text-lg">
+            <p class="font-normal">Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows us to handle events at a higher level in the DOM tree other than the level where the event was first received. <br><br>Event Delegation is a useful pattern that allows us to write cleaner code, and create fewer event listeners with similar logic. <br> With event delegation, we can create fewer event listeners and perform similar events-based logic in one place. This makes it easier for us to add and remove elements without having to add new or remove existing event listeners.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-3xl font-medium">How do you manipulate an element's attributes and style using
+            DOM?</div>
+          <div class="collapse-content text-lg">
+            <p class="font-normal">There are several way how we can manipulate element's attributes. First we have to retrieve an attribute value from an HTML. To do so we can use getAttribute() method. const element=getElementById('idName');  const value = element.getAttribute('attributeName'). Then set attribute by using setAttribute(). element.setAttribute('data-custom-attribute', 'new value'). Remove attribute using removeAttribute(). element.removeAttribute('data-custom-attribute')</p>
+            <br>
+            <p>We can access an element's style through the style property. const element = document.getElementById('idName'); const backGroundColor = element.style.backgroundColor.
+            element.style.backgroundColor='blue'. It is always better to manipulate styles through CSS classes: element.classList.add=('hidden').
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="./js/blog.js"></script>
+</body>
+
+</html>
