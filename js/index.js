@@ -44,7 +44,7 @@ document.getElementById('donate-1')
         let mainBalance = getInputValueByInnertext('balance')
         let areaBalance = getInputValueByInnertext('noakhali-amount')
         if (isNaN(donationAmount) || donationAmount < 0 || donationAmount === '' || donationAmount > mainBalance || donationAmount === null ) {
-            alert('Invalid Input')
+            alert('Invalid Amount')
             return;
         }
         calculate(donationAmount, areaBalance, mainBalance, 'balance', 'noakhali-amount')
@@ -58,7 +58,7 @@ document.getElementById('donate-2')
         let mainBalance = getInputValueByInnertext('balance')
         let areaBalance = getInputValueByInnertext('feni-amount')
         if (isNaN(donationAmount) || donationAmount < 0 || donationAmount === '' || donationAmount > mainBalance || donationAmount === null) {
-            alert('Invalid Input')
+            alert('Invalid Amount')
             return;
         }
         calculate(donationAmount, areaBalance, mainBalance, 'balance', 'feni-amount')
@@ -72,7 +72,7 @@ document.getElementById('donate-3')
         let mainBalance = getInputValueByInnertext('balance')
         let areaBalance = getInputValueByInnertext('quota-amount')
         if (isNaN(donationAmount) || donationAmount < 0 || donationAmount === '' || donationAmount > mainBalance || donationAmount === null) {
-            alert('Invalid Input')
+            alert('Invalid Amount')
             return;
         }
         calculate(donationAmount, areaBalance, mainBalance, 'balance', 'quota-amount')
